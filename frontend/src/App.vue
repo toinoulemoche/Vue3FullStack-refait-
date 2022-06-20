@@ -50,13 +50,13 @@ new Vue({
   el: '#login',
   data () {
     return {
-      info: null
+      jwt: null
     }
   },
   mounted () {
     axios
       .get('mongodb+srv://toinou:<password>@cluster0.qmdph.mongodb.net/?retryWrites=true&w=majority')
-      .then(response => (this.info = response))
+      .then(response => (this.jwt = response))
   }
 })
 
@@ -64,7 +64,6 @@ new Vue({
 
 <template>
 	<DemoRef/>
-    <div>{{info}}</div>
 </template>
 
 <style></style>
