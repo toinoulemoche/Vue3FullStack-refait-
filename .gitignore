@@ -13,7 +13,7 @@
 /frontend/coverage
 /frontend/*.local
 /frontend/cypress/videos/
-/frontend//cypress/screenshots/
+/frontend/cypress/screenshots/
 /frontend/.vscode/*
 /frontend/!.vscode/extensions.json
 /frontend/.idea
