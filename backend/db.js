@@ -1,9 +1,7 @@
 db = {
     memoryDb: new Map(),
     id:0
-  
   }
-  
   // populate
   db['memoryDb'].set(db['id']++, { nom: "Alice" }) // voici comment set une nouvelle entrée.
   db['memoryDb'].set(db['id']++, { nom: "Bob" })
