@@ -33,7 +33,21 @@ routes: [
 })
 
 new Vue({
-  el: '#app',
+  el: '#register',
+  data () {
+    return {
+      info: null
+    }
+  },
+  mounted () {
+    axios
+      .get('mongodb+srv://toinou:<password>@cluster0.qmdph.mongodb.net/?retryWrites=true&w=majority')
+      .then(response => (this.info = response))
+  }
+})
+
+new Vue({
+  el: '#login',
   data () {
     return {
       info: null
