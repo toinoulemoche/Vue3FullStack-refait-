@@ -1,8 +1,14 @@
 <script setup>
-import DemoRef from "@/components/DemoRef.vue"
-import axios from "axios"
-import Names from "@/components/Names.vue"
-import Names2 from "@/components/Names2.vue"
+import { useRouter, useRoute } from 'vue-router'
+
+export default {
+  setup() {
+    const router = useRouter()
+    const route = useRoute()
+    router.push({name: 'login', name: 'register'})
+    }
+}
+
 </script>
 
 <template>
